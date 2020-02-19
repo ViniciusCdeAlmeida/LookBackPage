@@ -1,0 +1,23 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "email": "look@teracode.com",
+    "password": "lookafter",
+    "name": "lok",
+    "phone": "33333-3333",
+    "date_created": "2020-02-16T01:56:50.455Z"
+  }
+}
