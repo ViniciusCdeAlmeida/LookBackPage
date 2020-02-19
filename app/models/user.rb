@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
   extend Devise::Models
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
-  belongs_to :person
+  has_one :person
   devise :database_authenticatable, 
          :registerable,
          :recoverable, 
