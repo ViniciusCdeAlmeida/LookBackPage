@@ -4,5 +4,5 @@ class Person < ApplicationRecord
   # user_id :integer,
   # gender :string,
 
-  # belongs_to :user
+  belongs_to :user
 end

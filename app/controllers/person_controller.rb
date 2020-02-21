@@ -13,6 +13,11 @@
         render json: @person
       end
 
+      # GET /persons/1/user_id/2
+      # def show
+      #   render json: @person_login
+      # end
+
       # POST /persons
       def create
         @person = Person.new(person_params)
@@ -41,7 +46,11 @@
       private
         # Use callbacks to share common setup or constraints between actions.
         def set_person
-          @person = Person.find(params[:id])
+          @person = Person.find_by(user_id: params[:id])
+        end
+
+        def set_person_login
+          @person_login = Person.find_by(params[:user_id])
         end
 
         # Only allow a trusted parameter "white list" through.
